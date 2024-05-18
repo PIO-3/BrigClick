@@ -14,7 +14,7 @@
                 <button class="menu-button">SHOP</button>
                 <button class="menu-button">BATTLE PASS</button>
                 <button class="menu-button">OPTIONS</button>
-                <button class="menu-button">EXIT TO DESKTOP</button>
+                <button class="menu-button" id="quit-button">QUIT</button>
             </div>
             <div class="center-image">
                 <img id="main-image" src="Brig.png" alt="Brig">
@@ -24,6 +24,11 @@
             <span class="credits-label">Brig Credits</span>
             <span id="credits-value">0</span>
         </div>
+    </div>
+    <div id="confirmation-dialog" class="dialog hidden">
+        <p>Are you sure?</p>
+        <button id="yes-button" class="dialog-button">YES</button>
+        <button id="no-button" class="dialog-button">NO</button>
     </div>
     <script src="script.js"></script>
 </body>
