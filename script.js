@@ -25,10 +25,10 @@ document.getElementById('main-image').addEventListener('click', function() {
         'rotate(-20deg)',
         'scale(1.2)',
         'scale(0.8)',
-        'translateX(20px)',
-        'translateX(-20px)',
-        'translateY(20px)',
-        'translateY(-20px)'
+        'translateX(2vw)',
+        'translateX(-2vw)',
+        'translateY(2vw)',
+        'translateY(-2vw)'
     ];
 
     const randomIndex = Math.floor(Math.random() * randomTransform.length);
