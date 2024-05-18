@@ -1,5 +1,22 @@
 let BrigCredits = 0;
 
+document.getElementById('start-button').addEventListener('click', function() {
+
+    document.getElementById('content').classList.remove('hidden');
+    this.style.display = 'none';
+    
+
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
+        document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
+        document.documentElement.msRequestFullscreen();
+    }
+});
+
 document.getElementById('main-image').addEventListener('click', function() {
     BrigCredits += 1;
     document.getElementById('credits-value').textContent = BrigCredits;
